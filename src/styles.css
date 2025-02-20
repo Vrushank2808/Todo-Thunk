@@ -1,0 +1,120 @@
+.todo-container {
+    max-width: 450px;
+    margin: 20px auto;
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    text-align: center;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 24px;
+    margin-bottom: 15px;
+}
+
+.error-message {
+    background: #ff4d4d;
+    color: white;
+    padding: 12px;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.search-input {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 6px;
+    background: #ecf0f1;
+    font-size: 16px;
+}
+
+.filter-buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 15px;
+}
+
+.filter-buttons button {
+    flex: 1;
+    padding: 12px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 6px;
+    background: #bdc3c7;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.filter-buttons button.active {
+    background: #3498db;
+}
+
+.filter-buttons button:hover {
+    background: #2980b9;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+}
+
+form input {
+    flex: 1;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    background: #ecf0f1;
+}
+
+form button {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background: #2ecc71;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #27ae60;
+}
+
+.todo-list {
+    list-style: none;
+    padding: 0;
+}
+
+.todo-list li {
+    padding: 12px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+    background: white;
+    border-radius: 6px;
+    margin: 5px 0;
+}
+
+.todo-list li:hover {
+    background: #f1f1f1;
+}
+
+.todo-list li:last-child {
+    border-bottom: none;
+}
+
+.todo-list li.completed {
+    text-decoration: line-through;
+    color: #7f8c8d;
+}
